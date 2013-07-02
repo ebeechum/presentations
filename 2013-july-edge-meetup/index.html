@@ -59,9 +59,8 @@
 <section class="slide">
   <h2>Interesting W3C Specs</h2>
   <h3>Web Components</h3>
-  <p>Consists of multiple specs:</p>
-  <p style="text-align: center;">HTML Templates<br>+<br>Custom Elements<br>+<br>
-    HTML Imports<br>+<br>Shadow DOM<br>+<br>Decorators (?)</p>
+  <img src="resources/images/web-comp.jpg">
+  <p><a href="http://jonrimmer.github.io/are-we-componentized-yet/">http://jonrimmer.github.io/are-we-componentized-yet/</a></p>
 </section>
 
 <section class="slide">
@@ -125,6 +124,11 @@ details[open] {
 
 <section class="slide">
   <h2>Interesting W3C Specs</h2>
+  <h3>And now for something completely different...</h3>
+</section>
+
+<section class="slide">
+  <h2>Interesting W3C Specs</h2>
   <h3><a href="http://www.w3.org/TR/gamepad/">Gamepad API</a></h3>
   <p>Handle console gamepad events via JS</p>
   <p>Working draft status</p>
@@ -149,11 +153,63 @@ details[open] {
 </section>
 
 <section class="slide">
+  <h2>Browser Pop Quiz</h2>
+  <p>Name the latest versions of:</p>
+  <ul>
+    <li>Chrome</li>
+    <li>Firefox</li>
+    <li>Safari</li>
+    <li>Opera</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Browser Pop Quiz</h2>
+  <p>Name the latest versions of:</p>
+  <ul>
+    <li>Chrome <strong>27</strong></li>
+    <li>Firefox <strong>22</strong></li>
+    <li>Safari <strong>6</strong></li>
+    <li>Opera <strong>15</strong></li>
+  </ul>
+  <p>Oh yeah, IE is at 10. But you knew that ;)</p>
+</section>
+
+<section class="slide">
+  <h2>Chrome 27</h2>
+  <p>Switching from WebKit to Blink in Chrome 28 (currently in beta)</p>
+  <p>Removed ~9M lines of code</p>
+  <p>New threaded HTML parser</p>
+  <blockquote>Loads DOM content about 10% faster and reduces the maximum
+    stop time due to parsing by 40%</blockquote>
+  <img src="resources/images/chrome.png" style="margin-bottom:-150px;">
+</section>
+
+<section class="slide">
+  <h2>Firefox 22</h2>
+  <p>Released June 25</p>
+  <p><a href="http://dev.w3.org/csswg/css-flexbox/">CSS3 Flexbox</a> (unprefixed, enabled by default)</p>
+  <p><a href="http://www.w3.org/TR/notifications/">Web Notifications API</a></p>
+  <p><a href="http://asmjs.org/">asm.js</a> (within 2X native performance)</p>
+  <p><a href="http://www.webrtc.org/">WebRTC</a> (Real-Time Communication) API</p>
+  <p>HTML5 <code>&lt;data></code> and <code>&lt;time></code> elements</p>
+  <img src="resources/images/firefox.png" style="margin-bottom:-150px;">
+</section>
+
+<section class="slide">
+  <h2>Opera 15</h2>
+  <p>Released July 2 (today!)</p>
+  <p>First release based on Chromium (Blink)</p>
+  <p>Missing some features still (tabs, settings sync, themes)</p>
+  <img src="resources/images/opera.png" style="margin-bottom:-150px;">
+</section>
+
+<section class="slide">
   <h2>IE 11</h2>
-  <p><a href="http://microsoft-news.com/webgl-spdy3-new-dev-tools-more-confirmed-for-ie11-in-win-8-1/">Coming</a> in Windows 8.1</p>
-  <p>WebGL!</p>
+  <p><a href="http://microsoft-news.com/webgl-spdy3-new-dev-tools-more-confirmed-for-ie11-in-win-8-1/">Coming</a> in Windows 8.1 (already in preview)</p>
+  <p><a href="http://www.khronos.org/webgl/">WebGL</a>! (low-level 3D graphics API)</p>
   <p>New console / debugging tools</p>
-  <p>Support for <a href="http://en.wikipedia.org/wiki/SPDY">SPDY</a></p>
+  <p>Support for <a href="http://en.wikipedia.org/wiki/SPDY">SPDY</a> (Google's network protocol)</p>
   <img src="resources/images/IE11.png" />
 </section>
 
@@ -175,10 +231,29 @@ details[open] {
   <img src="resources/images/ios7.jpg" />
 </section>
 
+<section class="slide">
+  <h2>Google Glass</h2>
+  <p>New full-fledged <strong>web browser</strong>, as of TODAY</p>
+  <img src="resources/images/glass.jpg" />
+</section>
+
+
 <!-- ===========  Libraries  ========= -->
 
 <section class="slide">
   <h1>Libraries</h1>
+</section>
+
+<section class="slide">
+  <h2>Coming Soon</h2>
+  <h3><a href="http://phonegap.com/blog/2013/06/20/coming-soon-phonegap30/">PhoneGap 3.0</a></h3>
+  <p>No ETA yet (2.9 was <a href="http://phonegap.com/blog/2013/06/26/pg-290-released/">just 
+    released</a> June 26, last 2.x release)</p>
+  <p>New plugin architecture / slim core</p>
+  <p><a href="http://log.michaelbrooks.ca/post/phonegap-cli-preview">PhoneGap CLI</a></p>
+  <p>New APIs: <strong>InAppBrowser</strong> (formerly ChildBrowser plugin), <strong>Globalization</strong></p>
+  <p>Plugin discovery based on npm</p>
+  <img src="resources/images/phonegap3.png" />
 </section>
 
 <section class="slide">
@@ -195,71 +270,106 @@ details[open] {
 </section>
 
 <section class="slide">
-  <h2>Trend: Web Components!</h2>
-  <p>The Web Components <strong>spec</strong> is still years away.</p>
+  <h2>Web Components Today!</h2>
+  <p>Native web components are still a little way off.</p>
   <p>Luckily (as usual) libraries are leading the way!</p>
-  <p>Some examples...</p>
 </section>
 
 <section class="slide">
-  <h2>Trend: Web Components!</h2>
-  <h3>React</h3>
+  <h2>Polymer</h2>
+  <p>Full Web Component <a href="http://www.polymer-project.org/">polyfill library</a> by Google</p>
+  <pre><code>&lt;element name="tk-element-databinding">
+  &lt;template>
+    This is &lt;strong><span style="color:#EE4021;">{{owner}}</span>&lt;/strong>'s tk-element.
+  &lt;/template>
+  &lt;script>
+    Polymer.register(this, {
+      <span style="color:#EE4021;">owner: 'Brian'</span>
+    });
+  &lt;/script>
+&lt;/element></code></pre>
+</section>
+
+<section class="slide">
+  <h2>X-Tags</h2>
+  <p>By Mozilla, mainly focused on <a href="http://www.x-tags.org/">custom elements</a></p>
+  <pre><code>// JS:
+xtag.register(<span style="color:#EE4021;">'modal'</span>, {
+  ...
+});
+
+// HTML:
+&lt;<span style="color:#EE4021;">x-modal</span>>
+  &lt;h3>X-Tags Modal Map&lt;/h3>
+  &lt;x-map data-key="6c86bb5b30a442c">&lt;/x-map>
+&lt;/<span style="color:#EE4021;">x-modal</span>></code></pre>
+</section>
+
+<section class="slide">
+  <h2>React Components</h2>
   <pre><code>var Hello = React.createClass({
     render: function() {
-        return &lt;div>Hello {this.props.name}&lt;/div>;
+        return &lt;div>Hello <span style="color:#EE4021;">{this.props.name}</span>&lt;/div>;
     }
 });
  
 React.renderComponent(
-    &lt;Hello name="World" />, document.body
+    &lt;Hello <span style="color:#EE4021;">name="World"</span> />, document.body
 );</code></pre>
 </section>
 
 <section class="slide">
-  <h2>Trend: Web Components!</h2>
-  <h3>Angular</h3>
+  <h2>Angular Components</h2>
   <pre><code>&lt;label>Name:&lt;/label>
-&lt;input type="text" ng-model="yourName"
-      placeholder="Enter a name here">
+&lt;input type="text" <span style="color:#EE4021;">ng-model="yourName"</span> value="World">
 
-&lt;h1>Hello {{yourName}}!&lt;/h1></code></pre>
+&lt;h1>Hello <span style="color:#EE4021;">{{yourName}}</span>!&lt;/h1></code></pre>
 </section>
 
 <section class="slide">
-  <h2>Trend: Web Components!</h2>
-  <h3>Ember</h3>
+  <h2>Ember Components</h2>
   <pre><code>App.ApplicationController =
   Ember.Controller.extend({
-    firstName: "Brian",
-    lastName: "Moeskau"
+    <span style="color:#EE4021;">yourName</span>: "World"
 });
 
-&lt;p>Hello, {{firstName}} {{lastName}}!&lt;/p></code></pre>
+&lt;p>Hello, <span style="color:#EE4021;">{{yourName}}</span>!&lt;/p></code></pre>
 </section>
 
-<!-- ===========  Events & Local  ========= -->
+<!-- ===========  Local Happenings  ========= -->
 
 <section class="slide">
-  <h1>Events &amp; Local</h1>
+  <h1>Local Happenings</h1>
 </section>
 
 <section class="slide">
-  <h2>Coming Up in Austin</h1>
+  <h2>July Events</h1>
+  
+  <h3><a href="http://www.meetup.com/openhackatx/events/126341852/">OpenHack Austin</a></h3>
+  <p>Tomorrow at 7pm, right here (free)</p>
   
   <h3><a href="http://txdevfest.com/">Google Developer Group TX DevFest</a></h3>
-  <p>Fri-Sat, July 12-13 ($20)</p>
+  <p>Fri-Sat, July 12-13 ($20)<br>
+  <span style="background:#ff9;padding:2px 10px;">"Google Glass WTF" by Whurley, hands-on Glass demos</span></p>
   
   <h3><a href="http://www.lonestarruby.org/">LoneStarRuby Conference</a></h3>
   <p>Fri-Sat, July 19-20 ($300)</p>
   
   <h3><a href="http://www.eventbrite.com/event/6013511575/">Startup Grind Austin: Mike Maples, Sr</a></h3>
   <p>Mon, July 29, 6-9pm ($15)</p>
+</section>
+
+<section class="slide">
+  <h2>On the Radar</h1>
   
   <h3><a href="http://aneventapart.com/event/austin-2013?/2013/austin/">An Event Apart: Austin</a></h3>
-  <p>Mon-Tue, Sept 30-Oct 1 ($945 through Aug 5)</p>
+  <p>Sept 30-Oct 1 ($945 through Aug 5, register now)</p>
   
   <h3><a href="http://atxstartupcrawl.eventbrite.com/">ATX Startup Crawl</a></h3>
-  <p>Thu, October 10, 5-10pm (free)</p>
+  <p>Oct 10, 5-10pm (free, register now)</p>
+  
+  <h3><a href="https://www.facebook.com/HackTX">Hack TX</a></h3>
+  <p>Nov 15-16 ($??, not open yet) &mdash; <a "href=http://hacktx.eventbrite.com/">more info</a></p>
 </section>
 
 <!-- ===========  Tips & Tricks  ========= -->
@@ -269,9 +379,15 @@ React.renderComponent(
 </section>
 
 <section class="slide">
-  <h2>Did You Know...</h2>
-  <p>...that Chrome's style inspector has an awesome built-in color picker?</p>
+  <h2>Did You Know</h2>
+  <p>...that Chrome's style inspector has a built-in color picker?</p>
   <p><img src="resources/images/color-picker.jpg"></p>
+</section>
+
+<section class="slide">
+  <h2>Did You Know</h2>
+  <p>...that Chrome can un-minify JavaScript in the console?</p>
+  <p><img src="resources/images/chrome-unminify.jpg"></p>
 </section>
 
 <!-- ===========  Fin  ========= -->
