@@ -1,0 +1,135 @@
+@import "compass/css3/text-shadow";
+
+.deck-container {
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+  font-size:1.75em;
+  background:#fff;
+  
+  .slide {
+    background:#fff;
+    
+    h1 {
+      color:#000;
+      letter-spacing: -.05em;
+    }
+
+    h2 {
+      color:#1f4c7f;
+      border-bottom-color:#ccc;
+      letter-spacing: -.05em;
+    }
+
+    h3 {
+      color:#444;
+    }
+
+    pre {
+      border-color:#ccc;
+    }
+
+    code {
+      color:rgb(25, 158, 7);
+    }
+
+    blockquote {
+      font-size:1em;
+      font-style:italic;
+      padding:.8em 3em .8em 1.5em;
+      color:#333;
+      background:#f6f6f6;
+      border-left:5px solid #ccc;
+
+      p {
+        margin:0;
+      }
+
+      cite {
+        font-size:.5em;
+        font-style:normal;
+        font-weight:bold;
+        color:#888;
+      }
+    }
+
+    ::-moz-selection{ background:#c00; color:#fff; }
+    ::selection { background:#c00; color:#fff; }
+
+    a {
+      color: rgb(28, 104, 190) !important;
+      
+      &, &:hover, &:focus, &:active, &:visited {
+        color:#c00;
+        text-decoration:none;
+      }
+
+      &:hover, &:focus {
+        text-decoration:underline;
+      }
+    }
+    
+    .strike {
+      text-decoration: line-through;
+    }
+    .dim {
+      opacity: .4;
+    }
+  }
+  
+  > .slide {
+    .deck-before, .deck-previous {
+      opacity:0.4;
+      
+      &:not(.deck-child-current) {
+        .deck-before, .deck-previous {
+          opacity:1;
+        }
+      }
+    }
+    
+    .deck-child-current {
+      opacity:1;
+    }
+  } 
+  
+  .deck-prev-link, .deck-next-link {
+    background:#ccc;
+    font-family:serif; // sans-serif arrows x-browser fail
+    
+    &, &:hover, &:focus, &:active, &:visited {
+      color:#fff;
+    }
+    
+    &:hover, &:focus {
+      background:#1f4c7f;
+      text-decoration:none;
+    }
+  }
+  
+  .deck-status {
+    font-size:0.6666em;
+    right: 15px;
+  }
+  
+  &.deck-menu {
+    .slide {
+      background:#eee;
+    }
+    
+    .deck-current, .no-touch & .slide:hover {
+      background:#ddf;
+    }
+  }
+  
+  .home {
+    background: url(../../resources/images/bleeding-edge.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    h1 {
+      color: #fff;
+      @include text-shadow(0 5px 10px rgba(0,0,0,.7));
+    }
+  }
+}
