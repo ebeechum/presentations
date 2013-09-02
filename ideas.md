@@ -1,31 +1,47 @@
-August
-======
 
-Industry
+==========
+ AUG NEWS
+==========
 
- ES6
- 
- W3C Specs
- 
- - CSS Shapes - http://www.w3.org/TR/2013/WD-css-shapes-1-20130620/
- - CSS Masking - http://www.w3.org/TR/2013/WD-css-masking-20130620/
- - Web Cryptography - http://www.w3.org/TR/2013/WD-WebCryptoAPI-20130625/
+SlimerJS released (browser automation)
+    - http://slimerjs.org/
 
-CSS Flexbox
+Hopscotch released (web page tours)
+    - http://linkedin.github.io/hopscotch/
 
- - http://www.sketchingwithcss.com/samplechapter/
+Leap.js released
+    - http://js.leapmotion.com/
 
-Events
+Amazon HTML5 web app support
+    - https://developer.amazon.com/post/Tx2HGWRGOW5YG8/Amazon-is-Now-Accepting-HTML5-Web-Apps-Making-it-Easy-for-You-to-Reach-Millions.html
 
-  jQuery Conference - http://blog.jquery.com/2013/07/03/jquery-heads-to-austin/
-  
+Tip: Chrome's monitorEvents() console cmd
+    - https://twitter.com/addyosmani/status/356805297773367296/photo/1
 
-Browser automation
-- http://slimerjs.org/
+First production Polymer app: chromestatus.com
+    - https://plus.google.com/app/basic/stream/z134hra40s2nstznr23utp04hx3ewbmnu
+
+Chrome 29 released (Aug 20)
+    - http://thenextweb.com/google/2013/08/20/chrome-29-arrives-with-omnibox-suggestions-based-on-recency-of-sites-profile-resetting-webrtc-on-android/
+    - Broke Sencha layouts! http://www.sencha.com/forum/showthread.php?268962-Title-disappears-in-TitleBar-component-(only-Chrome-Canary
+
+Firebug 1.12 released (Aug 21)
+    - https://hacks.mozilla.org/2013/08/firebug-1-12-new-features/
+
+React News
+    - http://facebook.github.io/react/blog/2013/08/26/community-roundup-7.html
+
+===============
+ GENERAL STUFF
+===============
+
+Tessel - JS-based, internet-connected microcontroller
+    - http://technical.io/
 
 ES6
-- Modules: http://ryanflorence.com/2013/es6-modules-and-browser-app-delivery/
+    - Modules: http://ryanflorence.com/2013/es6-modules-and-browser-app-delivery/
     http://www.2ality.com/2013/07/es6-modules.html
-- Generators (yield): http://blog.alexmaccaw.com/how-yield-will-transform-node
+    - Generators (yield): http://blog.alexmaccaw.com/how-yield-will-transform-node
 
-Leap.js: http://js.leapmotion.com/
+Browser-based iOS prototype design tool
+    - https://www.flinto.com/
