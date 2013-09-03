@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=1024, user-scalable=no">
 
   <title>Bleeding Edge Web: September 2013</title>
-  
+
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  
+
   <!-- Required stylesheet -->
   <link rel="stylesheet" href="../shared/core/deck.core.css">
-  
+
   <!-- Extension CSS files go here. Remove or add as needed. -->
   <link rel="stylesheet" href="../shared/extensions/goto/deck.goto.css">
   <link rel="stylesheet" href="../shared/extensions/menu/deck.menu.css">
@@ -22,10 +22,10 @@
 
   <!-- Style theme. More available in /themes/style/ or create your own. -->
   <link rel="stylesheet" href="../shared/themes/style/skew.css">
-  
+
   <!-- Transition theme. More available in /themes/transition/ or create your own. -->
   <link rel="stylesheet" href="../shared/themes/transition/fade.css">
-  
+
   <!-- Required Modernizr file -->
   <script src="../shared/resources/js/modernizr.custom.js"></script>
 </head>
@@ -41,11 +41,11 @@
   <h2>September 2013</h2>
   <h3>News from the Bleeding Edge</h3>
   <p>&mdash; Brian Moeskau (<a href="http://twitter.com/bmoeskau/">@bmoeskau</a>)</p>
-  
+
   <h3>10 Months with Meteor.js</h3>
-  <p>&mdash; Phillip Jacobs (<a href="http://twitter.com/phillyqueso">@phillyqueso</a>) &amp; 
+  <p>&mdash; Phillip Jacobs (<a href="http://twitter.com/phillyqueso">@phillyqueso</a>) &amp;
     Jason Griffin (<a href="http://twitter.com/haircuttedfreak">@haircuttedfreak</a>)</p>
-  
+
   <h3>Drinks</h3>
 </section>
 
@@ -60,11 +60,76 @@
   <blockquote>Starting [August 7], you can submit your web apps and mobile optimized web sites and have
     them merchandised alongside native apps on Amazon and Kindle Fire in nearly 200 countries
     worldwide, without any third-party software or doing any native app development.</blockquote>
-  <p><a href="https://developer.amazon.com/sdk/webapps/runtime-feature-support.html">Kindle 
+  <p><a href="https://developer.amazon.com/sdk/webapps/runtime-feature-support.html">Kindle
     Fire runtime</a> is based on Chromium, GPU-accelerated</p>
   <p>Free web app tester available</p>
   <p><strong>Amazon in-app purchasing API for JavaScript available</strong></p>
   <img src="images/amazon-html5.png">
+</section>
+
+<section class="slide">
+  <h2><a href="http://espadrine.github.io/New-In-A-Spec/es6/">ECMAScript 6 (Harmony)</a></h2>
+  <p><strong>Proxies</strong>: Objects with virtualized properties, i.e. detect changes to an object attribute.</p>
+  <br/>
+  <p><strong>let</strong>: scope to a block as opposed to fn()</p>
+  <pre><code>let x = 1;</code></pre>
+  <p><strong>const</strong>: like <i>var</i>, but cannot be changed once it's set.</p>
+  <pre><code>const pi = 3.141593;</code></pre>
+  <p>Defaults</p>: Define default arg values.
+  <pre><code>function(a, b=1, c='test'){...}</code></pre>
+</section>
+
+<section class="slide">
+  <h2>ES6: Generators</h2>
+  <pre><code>function* values() {
+  for (var i=0;i&gt;arguments.length;i++){
+    yield arguments[i];
+  }
+}
+
+var o=values(1,2,3); // Obj. Generator</code></pre>
+<pre><code>o.next(); // => { value: 1, done: false}
+o.next(); // => {value: 2, done: false}
+o.next(); // => {value: 3, done: false}
+o.next(); // => {value: undefined, done: true}</code></pre>
+</section>
+
+<section class="slide">
+  <h2>ES6: Classes</h2>
+  <pre><code style="font-size: small;">class Point extends Base {
+  constructor(x,y) {
+    super();
+    this[px] = x, this[py] = y;
+    this.r = function() { return Math.sqrt(x*x + y*y); }
+  }
+  get x() { return this[px]; }
+  get y() { return this[py]; }
+  proto_r() { return Math.sqrt(this[px] * this[px] + this[py] * this[py]); }
+  equals(p) { return this[px] === p[px] && this[py] === p[py]; }
+}</code></pre>
+<p>Mostly syntactic sugar.</p>
+</section>
+
+<section class="slide">
+  <h2>ES6: Modules</h2>
+  <pre><code>module math {
+  export function sum(x, y) {
+    return x + y;
+  }
+  export var pi = 3.141593;
+}</code></pre>
+  <pre><code>import {sum, pi} from math;
+alert(sum(pi,pi));</code></pre>
+</section>
+
+<section class="slide">
+  <h2>ES6: Summary</h2>
+  <p>Many more upcoming features.</p>
+  <p>Several features supported in Node.js</p>
+  <pre><code>node --harmony myfile.js</code></pre>
+  <p>Many polyfills work but aren't complete.</p>
+  <p>Spec isn't complete.</p>
+  <p>ES7 work has already started.</p>
 </section>
 
 <!-- ===========  Platforms  ========= -->
@@ -104,7 +169,7 @@
     <li>Improved Omnibox</li>
     <li>WebRTC support (Android only)</li>
     <li>Bug and security fixes</li>
-    <li>Sencha Touch alert: this version <a href="http://www.sencha.com/forum/showthread.php?268962-Title-disappears-in-TitleBar-component-(only-Chrome-Canary">broke</a> 
+    <li>Sencha Touch alert: this version <a href="http://www.sencha.com/forum/showthread.php?268962-Title-disappears-in-TitleBar-component-(only-Chrome-Canary">broke</a>
       HBox/VBox layouts!</li>
   </ul>
   <img src="../shared/resources/images/chrome.png" style="margin-bottom:-150px;">
@@ -203,7 +268,7 @@ $ tessel shell
 
 <section class="slide">
   <h2>September Events</h1>
-  
+
   <h3><a href="http://battlehack.org/austin/">Battle Hack: Austin</a></h3>
   <p>Sept 28-29, free</p>
 </section>
@@ -213,7 +278,7 @@ $ tessel shell
 
   <h3><a href="http://atxstartupcrawl.eventbrite.com/">ATX Startup Crawl</a></h3>
   <p>Oct 10, 5-10pm (free, register now)</p>
-  
+
   <h3><a href="https://www.facebook.com/HackTX">Hack TX</a></h3>
   <p>Nov 15-16 ($??, not open yet) &mdash; <a href="http://hacktx.eventbrite.com/">more info</a></p>
 </section>
