@@ -70,34 +70,34 @@
 <section class="slide">
   <h2><a href="http://espadrine.github.io/New-In-A-Spec/es6/">ECMAScript 6 (Harmony)</a></h2>
   <p><strong>Proxies</strong>: Objects with virtualized properties, i.e. detect changes to an object attribute.</p>
-  <br/>
   <p><strong>let</strong>: scope to a block as opposed to fn()</p>
   <pre><code>let x = 1;</code></pre>
   <p><strong>const</strong>: like <i>var</i>, but cannot be changed once it's set.</p>
   <pre><code>const pi = 3.141593;</code></pre>
-  <p>Defaults</p>: Define default arg values.
+  <p><strong>Defaults</strong>: Define default arg values</p>
   <pre><code>function(a, b=1, c='test'){...}</code></pre>
 </section>
 
 <section class="slide">
   <h2>ES6: Generators</h2>
   <pre><code>function* values() {
-  for (var i=0;i&gt;arguments.length;i++){
+  for (var i = 0; i &gt; arguments.length; i++) {
     yield arguments[i];
   }
 }
 
-var o=values(1,2,3); // Obj. Generator</code></pre>
-<pre><code>o.next(); // => { value: 1, done: false}
-o.next(); // => {value: 2, done: false}
-o.next(); // => {value: 3, done: false}
-o.next(); // => {value: undefined, done: true}</code></pre>
-<p>Alternative to callbacks & promises!</p>
+var o = values(1,2,3); // Obj. Generator
+
+o.next(); // => { value: 1, done: false }
+o.next(); // => { value: 2, done: false }
+o.next(); // => { value: 3, done: false }
+o.next(); // => { value: undefined, done: true }</code></pre>
+<p>Alternative to callbacks &amp; promises!</p>
 </section>
 
 <section class="slide">
   <h2>ES6: Classes</h2>
-  <pre><code style="font-size: small;">class Point extends Base {
+  <pre><code>class Point extends Base {
   constructor(x,y) {
     super();
     this[px] = x, this[py] = y;
@@ -106,9 +106,9 @@ o.next(); // => {value: undefined, done: true}</code></pre>
   get x() { return this[px]; }
   get y() { return this[py]; }
   proto_r() { return Math.sqrt(this[px] * this[px] + this[py] * this[py]); }
-  equals(p) { return this[px] === p[px] && this[py] === p[py]; }
+  equals(p) { return this[px] === p[px] &amp;&amp; this[py] === p[py]; }
 }</code></pre>
-<p>Mostly syntactic sugar.</p>
+<p>Mostly syntactic sugar</p>
 </section>
 
 <section class="slide">
@@ -118,19 +118,21 @@ o.next(); // => {value: undefined, done: true}</code></pre>
     return x + y;
   }
   export var pi = 3.141593;
-}</code></pre>
-  <pre><code>import {sum, pi} from math;
-alert(sum(pi,pi));</code></pre>
+}
+
+import {sum, pi} from math;
+
+alert(sum(pi, pi));</code></pre>
 </section>
 
 <section class="slide">
   <h2>ES6: Summary</h2>
-  <p>Many more upcoming features.</p>
+  <p>Many more upcoming features</p>
   <p>Several features supported in Node.js</p>
   <pre><code>node --harmony myfile.js</code></pre>
-  <p>Many polyfills work but aren't complete.</p>
-  <p>Spec isn't complete.</p>
-  <p>ES7 work has already started.</p>
+  <p>Many polyfills work but aren't complete</p>
+  <p>Spec isn't complete</p>
+  <p>ES7 work has already started</p>
 </section>
 
 <!-- ===========  Platforms  ========= -->
@@ -235,10 +237,10 @@ alert(sum(pi,pi));</code></pre>
 </section>
 
 <section class="slide">
-  <h2><a href="http://linkedin.github.io/hopscotch/">Hopscotch</a></h2>
+  <h2 id="hs-1"><a href="http://linkedin.github.io/hopscotch/">Hopscotch</a></h2>
   <p>Easy product tours for web pages</p>
-  <p>Developed by LinkedIn</p>
-  <pre><code>var tour = {
+  <p id="hs-2">Developed by LinkedIn</p>
+  <pre id="hs-3"><code>var tour = {
     id: "hello-hopscotch",
     steps: [
       { title: "Step 1", ... },
@@ -246,7 +248,7 @@ alert(sum(pi,pi));</code></pre>
     ]
 };
 hopscotch.startTour(tour);</code></pre>
-  <img src="images/hopscotch.png">
+  <a href="#" id="hs-start">Try a tour</a>
 </section>
 
 <section class="slide">
@@ -258,6 +260,7 @@ hopscotch.startTour(tour);</code></pre>
 $ tessel shell
 > var tessel = require('tessel')
 > tessel.led(1).blink()</code></pre>
+  <a href="http://technical.io/">http://technical.io/</a>
   <img src="images/tessel.jpg">
 </section>
 
@@ -282,6 +285,11 @@ $ tessel shell
 
   <h3><a href="https://www.facebook.com/HackTX">Hack TX</a></h3>
   <p>Nov 15-16 ($??, not open yet) &mdash; <a href="http://hacktx.eventbrite.com/">more info</a></p>
+  
+  <h3><a href="http://www.wizardworld.com/home-tx.html">Austin Comic Con</a></h3>
+  <p>Nov 22-24 ($80 advance)</p>
+  
+  <img src="images/comic-con.jpg" width="60%">
 </section>
 
 <!-- ===========  Tips & Tricks  ========= -->
@@ -358,6 +366,36 @@ unmonitorEvents($0, ['mousemove']);</code></pre>
   $(function() {
     $.deck('.slide');
   });
+</script>
+
+<!-- Hopscotch, just for this specific presentation -->
+<script src="hopscotch/hopscotch-0.1.1.js"></script>
+<link rel="stylesheet" href="hopscotch/hopscotch-0.1.1.css">
+<script>
+var tour = {
+  steps: [{
+      title: "Hopscotch!",
+      content: "Apparently it works. Neat!",
+      target: "hs-1",
+      placement: "bottom"
+    },{
+      title: "Another Thing",
+      content: "Look at this &mdash; it's cool.",
+      target: "hs-2",
+      placement: "bottom"
+    },{
+      title: "The End",
+      content: "And that's it! Hope you liked it.",
+      target: "hs-3",
+      placement: "top"
+    }
+  ]
+};
+
+$('#hs-start').on('click', function(e) {
+  e.preventDefault();
+  hopscotch.startTour(tour);
+})
 </script>
 </body>
 </html>
