@@ -14,8 +14,8 @@ All dependencies are included or linked so that the presentations should run out
 **News from the bleeding edge**: ECMAScript 6 (Harmony) overview, browser + Firebug updates, JS lib releases,
 Hopscotch lib demo, intro to Tessel (JS-scriptable microprocessor), local happenings for Sept, tips & tricks.
 
-**10 Months with Meteor.js**: Phillip Jacobs and Jason Griffin of TasteMade give an overview of Meteor
-in the context of their own real-world, production use while building TasteMade's applications. Includes
+**10 Months with Meteor.js**: Phillip Jacobs and Jason Griffin of Tastemade give an overview of Meteor
+in the context of their own real-world, production use while building Tastemade's applications. Includes
 code demos, best practices and pros and cons of using Meteor.
 
 [**Bleeding Edge Web Meetup: WigWag & DeviceJS**](/2013/08-aug-edge-meetup/) _August 6_
